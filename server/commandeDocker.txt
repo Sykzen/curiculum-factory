@@ -12,3 +12,6 @@ docker exec -it "le nom du conteneur" /bin/sh
 apt-get update
 apt-get install vim nano
 
+#---------------------------------------Commande habituel--------------------------------------
+#Connecter le serveur
+docker-compose up
