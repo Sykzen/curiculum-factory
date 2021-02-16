@@ -24,7 +24,11 @@
   <script src="https://kit.fontawesome.com/1164413ddc.js" crossorigin="anonymous"></script>
   <!------Created link-->
   <link href="css/header&footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/material-cards/dist/material-cards.css">
   <link rel="stylesheet" href="css/espace_recruteur.css">
+
+
+
   <style type="text/css">
 
     html {
@@ -101,35 +105,37 @@
 <br>
     <section class="container">
         <div class="row active-with-click">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <article class="material-card Red">
-                    <h2>
-                        <span>{$Name$}</span>
-                        <strong>
-                            <i class="fa fa-fw fa-star"></i>
-                            Emploi
-                        </strong>
-                    </h2>
-                    <div class="mc-content">
-                        <div class="img-container">
-                            <img class="img-responsive" src="img/cv.png">
+            <div id="Modal">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <article class="material-card Red">
+                        <h2>
+                            <span>{$Name$}</span>
+                            <strong>
+                                <i class="fa fa-fw fa-star"></i>
+                                Emploi
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/cv.png">
+                            </div>
+                            <div class="mc-description">
+                                Mini desc                        </div>
                         </div>
-                        <div class="mc-description">
-                            Mini desc                        </div>
-                    </div>
-                    <a class="mc-btn-action">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <div class="mc-footer">
-                        <h4>
-                            Social
-                        </h4>
-                        <a class="fa fa-fw fa-facebook"></a>
-                        <a class="fa fa-fw fa-twitter"></a>
-                        <a class="fa fa-fw fa-linkedin"></a>
-                        <a class="fa fa-fw fa-google-plus"></a>
-                    </div>
-                </article>
+                        <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                        </div>
+                    </article>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <article class="material-card Pink">

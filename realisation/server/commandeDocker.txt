@@ -1,0 +1,14 @@
+#Pour executer dockerfile
+docker build .
+#Pour activer les images
+docker-compose build
+#Crée le serveur et l'executer
+docker-compose up
+#Voir les containeur activé
+docker ps
+----- IMPORTANT #se mettre sur le conteneur ----------------------------------------
+docker exec -it "le nom du conteneur" /bin/sh
+----------------SUR DOCKER NANO/VIM n'est pas installé on fait donc :------------------------
+apt-get update
+apt-get install vim nano
+

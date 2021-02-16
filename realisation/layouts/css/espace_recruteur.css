@@ -1,0 +1,19 @@
+body {
+    padding-top: 50px;
+}
+button.btn.btn-secondary.btn-lg.dropdown-toggle {
+    position: absolute;
+    right: 2px;
+}
+h1 {
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+
