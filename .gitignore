@@ -1,3 +1,28 @@
 .gitignore
-test.html
-img_card.html
+#Ignore the environnement 
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
+
+#Ignore Output VScode 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+
+# Ignore Django  Output#
+*.log
+*.pot
+*.pyc
+__pycache__
+media
+
+# Ignore Python Output # 
+*.py[cod] 
+*$py.class 

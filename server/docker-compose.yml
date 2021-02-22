@@ -1,5 +1,5 @@
 version: "3.9"
-   
+
 services:
  
   web:
@@ -10,4 +10,16 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+    links:
+      - db
+  db:
+    image: mongo:latest
+    hostname: dbcv #name of the db
+    container_name: dbcv # name of the container
+    environment:
+      - MONGO_INITDB_DATABASE=dbcv 
+      - MONGO_INITDB_ROOT_USERNAME=sykzen
+      - MONGO_INITDB_ROOT_PASSWORD=123viveleroi
     
+    ports:
+      - 27017:27017

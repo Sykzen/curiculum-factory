@@ -8,6 +8,7 @@ docker-compose up
 docker ps
 ----- IMPORTANT #se mettre sur le conteneur ----------------------------------------
 docker exec -it "le nom du conteneur" /bin/sh
+docker exec -it djangocv /bin/sh
 ----------------SUR DOCKER NANO/VIM n'est pas installé on fait donc :------------------------
 apt-get update
 apt-get install vim nano
@@ -15,3 +16,7 @@ apt-get install vim nano
 #---------------------------------------Commande habituel--------------------------------------
 #Connecter le serveur
 docker-compose up
+#----------------------------Poblème courant---------------------------
+Docker ne eror runnin:
+sol: Open terminal
+C:\Program Files\Docker\Docker> .\DockerCli.exe -SwitchDaemon

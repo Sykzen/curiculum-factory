@@ -1,43 +1,28 @@
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link href="applicant.css" rel="stylesheet"/>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <link href="{% static 'css/applicant.css' %}" rel="stylesheet"/>
     </head>
+
+{% include 'header.html' %}
     <body>
+
         <header>
-            <img src="./../images/fleche-retour.jpeg" alt="bouton retour en arrière"/>
-            <h1>CV-FACTORY</h1>
-            <img src="./../images/utilisateur.jpeg" alt="bouton compte utilisateur"/>
+            <img src="{% static 'img/fleche-retour.jpeg' %}" alt="bouton retour en arrière"/>
         </header>
         <h1>Candidat</h1>
         <p>Choisir son modèle</p>
         <h2>Les modèles</h2>
         <section>
-            <article><a><img src="./../images/modele.jpeg" alt="modele de cv"/></a></article>
-            <article><a><img src="./../images/modele.jpeg" alt="modele de cv"/></a></article>
-            <article><a><img src="./../images/modele.jpeg" alt="modele de cv"/></a></article>
-            <article><a><img src="./../images/modele.jpeg" alt="modele de cv"/></a></article>
-            <article><a><img src="./../images/modele.jpeg" alt="modele de cv"/></a></article>
-            <article><a><img src="./../images/modele.jpeg" alt="modele de cv"/></a></article>
+            <article><a><img src="{% static 'img/modele.jpeg' %}" alt="modele de cv"/></a></article>
+            <article><a><img src="{% static 'img/modele.jpeg' %}" alt="modele de cv"/></a></article>
+            <article><a><img src="{% static 'img/modele.jpeg' %}" alt="modele de cv"/></a></article>
+            <article><a><img src="{% static 'img/modele.jpeg' %}" alt="modele de cv"/></a></article>
+            <article><a><img src="{% static 'img/modele.jpeg' %}" alt="modele de cv"/></a></article>
+
         </section>
-        <footer>
-            <div class="test">
-                <div>
-                    navigation
-                    <ul>
-                        <li>accueil</li>
-                        <li>candidat</li>
-                        <li>recruteur</li>
-                    </ul>
-                </div>
-                <div>
-                    contact
-                    <ul>
-                        <li>elliot.r@free.fr</li>
-                        <li>sikzen@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        
     </body>
 </html>
+{% endblock content %}

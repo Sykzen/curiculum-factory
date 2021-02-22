@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nomdusite - mini description</title>
+    <meta name="description" content="Crée votre cv en ligne ... A remplir">
+    <meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="CV en ligne" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="http://www.nomsite.fr/" />
+	<meta property="og:site_name" content="http://nomsite.fr" />
+    <meta property="og:image" content="image pour notre site" />
+  <!----------------------Css commun---------------------------------->
+  <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
+
+  <!----------------------Vue.js link----------------------------------->
+  <script src="https://unpkg.com/vue@next"></script>
+   <!--------------------------Botstrap link---------------------->
+                    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="Sykzen" ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="Sykzen">  
+
+
+<!-----------------------------Css head and footer------------------------------------->
+<!--<link rel="stylesheet" href="{% static 'css/signupandregister.css' %}"/> --->
+
+
+
+
+  {% block content %}   
+
+  {% endblock content %} 
