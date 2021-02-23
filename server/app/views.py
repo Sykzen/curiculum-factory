@@ -1,8 +1,6 @@
 from django.shortcuts import render,redirect,reverse
 
 
-
-
 def index(request):
     return render(request, 'index.html')
 def espace_recruteur(request):

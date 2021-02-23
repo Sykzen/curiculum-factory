@@ -2,11 +2,16 @@ from pathlib import Path
 import os # for adding the template
 
 import djongo
+
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '--p&)#*-*5s5)+$pa3r=p2wx5wofjxrg=$a%cv)6+2!!6&b8sn'
+
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

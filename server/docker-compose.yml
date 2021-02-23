@@ -2,16 +2,17 @@ version: "3.9"
 
 services:
  
-  web:
+  cv:
     build: .
     container_name: djangocv
     command: python manage.py runserver 0.0.0.0:8000
-    volumes:
+    volumes: #pour relier la machine au conteneur
       - .:/code
     ports:
       - "8000:8000"
     links:
       - db
+
   db:
     image: mongo:latest
     hostname: dbcv #name of the db
